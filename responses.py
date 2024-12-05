@@ -21,7 +21,7 @@ def get_response(message, username) -> str:
     elif p_message == '!fullreset':
         names.clear()
         names_back_up.clear()
-        return 'Names have been erased, please enroll or load names' + str(len(names))
+        return 'Names have been erased, please enroll or load names'
 
     elif p_message == '!people_left':
         return str(len(names)) + ' people are left'
@@ -49,7 +49,7 @@ def get_response(message, username) -> str:
         return ', '.join(names)
     
     elif p_message == '!help':
-        return "`!enroll - places you into the secret santa\n!people_left - view how many people are left\n?draw- gives you a random name\n\n!save_names - saves the current list of names\n!load_names - loads the names last saved\n\n!fullreset - wipes everything except the save file`"
+        return "`!enroll - places you into the secret santa\n!people_left - view how many people are left\n?draw - gives you a random name\n\n!save_names - saves the current list of names\n!load_names - loads the names last saved\n\n!fullreset - wipes everything except the save file`"
 
     # Add whatever else you want
     # elif p_message == 'whats updog?':
