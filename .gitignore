@@ -1,0 +1,4 @@
+__pycache__
+.env
+names_list.pkl
+venv
