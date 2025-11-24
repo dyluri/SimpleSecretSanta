@@ -68,9 +68,9 @@ def get_private_response(message, username) -> str:
             if names[0] == username:
                 return 'You are the last name in the drawing, please ask to !redo'
 
-            while temp == username:
-                temp = random.choice(names)
-            print("Name is: ", temp)
-            names.remove(temp)
+        while temp == username:
+            temp = random.choice(names)
+        print("Name is: ", temp)
+        names.remove(temp)
 
-            return 'You got: ' + temp + '!'
+        return 'You got: ' + temp + '!'
