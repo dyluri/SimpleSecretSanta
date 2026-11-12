@@ -16,8 +16,9 @@ variable in Vercel, not in Git. Enable Message Content Intent for the bot in
 the Discord Developer Portal.
 
 The Dockerfile and `vercel.json` run one `santa` daemon with 1 GiB of memory.
-The empty `public` output directory is separate from the daemon source; this
-bot does not serve a website. Daemons run only on production deployments.
+The `public` directory contains a placeholder page because Vercel requires
+nonempty static output. It does not report bot health.
+Daemons run only on production deployments.
 After deploying, check **Daemons** and the runtime logs for the bot's
 `is now running` message.
 
