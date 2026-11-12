@@ -7,7 +7,8 @@ async def send_message(username, message, user_message, is_private):
     try:
         if is_private:
             response = responses.get_private_response(user_message, username)
-            await message.author.send(response)
+            if response:
+                await message.author.send(response)
         else:
             response = responses.get_response(user_message, username)
             if response:
